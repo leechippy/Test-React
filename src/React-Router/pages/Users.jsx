@@ -12,7 +12,7 @@ const Users = () => {
       const fetchData=async()=>{
       try{
           setLoading(true)
-          await axios.get(`${baseUrl}/data.json`).then((response)=>{
+          await axios.get(`../data.json`).then((response)=>{
            
               setData(response.data)
               setLoading(false)

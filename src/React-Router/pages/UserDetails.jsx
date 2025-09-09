@@ -13,7 +13,7 @@ const UserDetails = () => {
           if(!filteruser){
         const fetchData=async()=>{
         try{
-          await axios.get(`${baseUrl}/data.json`).then(response=>{
+          await axios.get(`../data.json`).then(response=>{
              setFilterUser(response.data.find(item=>item.id==userid))
            }
          )
@@ -34,7 +34,7 @@ const UserDetails = () => {
             <div>
                <h1>{filteruser.name}</h1>
             {/* onClick={()=>navigate(`/users`)} */}
-               <NavLink to="">Marks</NavLink>
+               <NavLink to="" end>Marks</NavLink>
                <NavLink to="sports">Sports</NavLink>
                <Outlet context={filteruser}/>
             </div>
