@@ -1,0 +1,35 @@
+[
+    {
+        "id":1,
+        "name":"Albert",
+        "description":"1270 Diamond spring",
+        "class":6,
+        "marks":{
+            "english":[20,30],
+            "physics":[30]
+        },
+        "sports":["Cricket","Football"]
+    },
+    {
+        "id":2,
+        "name":"Joseph",
+        "description":"Kennedy Memorial Dr",
+         "class":5,
+        "marks":{
+            "english":[10,30],
+            "physics":[40]
+        },
+        "sports":["Football"]
+    },
+     {
+        "id":3,
+        "name":"Chippy",
+        "description":"Kennedy Memorial Dr",
+         "class":6,
+        "marks":{
+            "hindi":[20,30],
+            "physics":[30]
+        },
+        "sports":["Cricket","Vollyball"]
+    }
+]

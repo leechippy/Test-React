@@ -1,0 +1,30 @@
+.app-header {
+    background-color: #1e1e2f;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.app-header span:not(.title-header) {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.active {
+    color: aqua
+}
+
+/* .app-header span:not(.title-header):hover {
+    color: #00bcd4;
+} */

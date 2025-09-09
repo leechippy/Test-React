@@ -1,0 +1,32 @@
+/* Container for the entire component */
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Increment button */
+button[name='increment'] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[name='increment']:hover {
+    background-color: #45a049;
+}
+
+/* Decrement button */
+button[name='decrement'] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[name='decrement']:hover {
+    background-color: #d32f2f;
+}
