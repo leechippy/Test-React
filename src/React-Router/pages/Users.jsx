@@ -7,12 +7,12 @@ const Users = () => {
     const[searchParams,setSearchparams]=useSearchParams()
     const cls=searchParams.get('class')
     const navigate=useNavigate()
-   const baseUrl = import.meta.env.VITE_BASE_URL;
+  //  const baseUrl = import.meta.env.VITE_BASE_URL;
      useEffect(()=>{
       const fetchData=async()=>{
       try{
           setLoading(true)
-          await axios.get(`../data.json`).then((response)=>{
+          await axios.get(`/data.json`).then((response)=>{
            
               setData(response.data)
               setLoading(false)
