@@ -20,6 +20,7 @@ const Header = () => {
               }} to="/settings">Settings </PrivateNavlink>
 
               <PrivateNavlink to="/usage">Usage </PrivateNavlink>
+              <PrivateNavlink to="/logout"  >Logout </PrivateNavlink>
         </div>
        <Outlet/>
         </div>

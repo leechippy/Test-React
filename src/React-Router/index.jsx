@@ -18,6 +18,7 @@ import Sports from './pages/Sports';
 import Login from './pages/Login';
 import Header from './componets/Layout/Header';
 import ProtectedRoute from './componets/ProtectedRoute';
+import Signout from './pages/Signout';
 
 const CompUser = React.lazy(() => import('./pages/Users'));
 
@@ -48,8 +49,9 @@ const Reactrouterpage = () => {
                   <Route index element={<Marks />} />
                   <Route path="sports" element={<Sports />} />
                 </Route>
+                
               </Route>
-
+             <Route path="logout" element={<Signout/>} />
               {/* Fallback */}
               <Route path="*" element={<NoRecord />} />
             </Route>

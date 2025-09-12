@@ -3,8 +3,7 @@ import { NavLink, matchPath, useResolvedPath } from 'react-router-dom';
 import routePermissions from '../../../public/menupermission.json';
 
 const PrivateNavlink = ({ to, children, ...rest }) => {
-    console.log(children);
-    
+   
   const resolvedPath = useResolvedPath(to); // ✅ resolves relative paths
   const fullPath = resolvedPath.pathname;
 
