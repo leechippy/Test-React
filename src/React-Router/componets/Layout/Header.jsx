@@ -1,24 +1,25 @@
-import { Link,NavLink, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import React from 'react';
 import './Header.css'
+import PrivateNavlink from "../PrivateNavlink";
 
 const Header = () => {
     return (
         <div>
         <div className="header-style">
-              <NavLink className='testlink' to="/">Home </NavLink>
+              <PrivateNavlink className='testlink' to="/">Home </PrivateNavlink>
 
-              <NavLink className={(obj)=>{
+              <PrivateNavlink className={(obj)=>{
                   const {isActive}=obj
                   return `testlink ${isActive?`active`:``}`
-              }} to="/users">Users </NavLink>
+              }} to="/users">Users </PrivateNavlink>
 
-              <NavLink style={(obj)=>{
+              <PrivateNavlink style={(obj)=>{
                 const {isActive}=obj
                 // return {color:isActive?'red':'blue'}
-              }} to="/settings">Settings </NavLink>
+              }} to="/settings">Settings </PrivateNavlink>
 
-              <NavLink to="/usage">Usage </NavLink>
+              <PrivateNavlink to="/usage">Usage </PrivateNavlink>
         </div>
        <Outlet/>
         </div>

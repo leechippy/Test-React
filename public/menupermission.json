@@ -1,0 +1,8 @@
+{
+    "/settings":{
+         "role":"admin"
+    },
+    "/users/:userid/sports":{
+        "role":"admin"
+    }
+}

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { Link, useParams,useNavigate,useLocation, NavLink, Outlet } from 'react-router-dom';
+import { Link, useParams,useNavigate,useLocation, Outlet } from 'react-router-dom';
+import PrivateNavlink from '../componets/PrivateNavlink';
 const MyLazyComponent=lazy(()=>import('../componets/section'))
 
 const UserDetails = () => {
@@ -41,8 +42,8 @@ const UserDetails = () => {
               
                
             {/* onClick={()=>navigate(`/users`)} */}
-               <NavLink to="" end>Marks</NavLink>
-               <NavLink to="sports">Sports</NavLink>
+               <PrivateNavlink to="" end>Marks</PrivateNavlink>
+               <PrivateNavlink to="sports">Sports</PrivateNavlink>
                <Outlet context={filteruser}/>
             </div>
             <div>
